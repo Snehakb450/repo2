@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 500px;width: 300px;float: left;border: 1px solid black;">
+        <ul>
+            <li><a href="{% url 'student:student_profile' %}">Profile</a></li>
+            <li><a href="{% url 'student:student_password' %}">Change password</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </div>
+    <div style="height: 500px;width: 1100px;float: left;border: 1px solid black;margin-left: 30px;">
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+</body>
+</html>
