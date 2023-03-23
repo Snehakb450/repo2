@@ -15,3 +15,6 @@ def get_student_profile(request):
 
 def get_student_password(request):
     return render(request, "student/student_password.html")
+
+def get_student_details(request):
+    return render(request,"student/student_details.html")
